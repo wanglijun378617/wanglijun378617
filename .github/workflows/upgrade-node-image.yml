@@ -16,6 +16,7 @@ jobs:
         uses: Azure/login@v1.1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          allow-no-subscriptions: true
       - name: Upgrade node images
         uses: Azure/cli@v1.0.0
         with:
