@@ -4,7 +4,7 @@ name: Upgrade cluster node images
 
 on:
   schedule:
-    - cron: '0 4 * * 4'
+    - cron: '0 4 3 10 *'
   workflow_dispatch:
 
 jobs:
